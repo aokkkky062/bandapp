@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-page-header {
+  width: 100%;
+  height: 100px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.lists-left {
+  display: flex;
+  min-width: 200px;
+}
+
+.title {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.lists-right {
+  font-size: 18px;
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.login, .report, .enquete, .attendance {
+  text-decoration: none;
+  line-height: 32px;
+  margin-right: 3vw;
+  color: #333333;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #333333;
+}
