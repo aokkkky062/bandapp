@@ -7,7 +7,7 @@
     </ul>
 
     <ul class='lists-right'>
-      <li><%= link_to '練習報告', "#", class: "report" %></li>
+      <li><%= link_to '練習報告', new_post_path, class: "report" %></li>
       <li><%= link_to 'アンケート', "#", class: "enquete" %></li>
       <li><%= link_to '出席状況', "#", class: "attendance" %></li>
       <% if user_signed_in? %>
