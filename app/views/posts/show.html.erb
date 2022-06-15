@@ -1,0 +1,29 @@
+<%= render "shared/header" %>
+<div class="main">
+  <div class="detail-container">
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-post detail-date">練習日</th>
+          <td class="detail-value detail-date"><%= @post.date.strftime("%Y/%m/%d()") %></td>
+        </tr>
+        <tr>
+          <th class="detail-post detail-name">投稿者</th>
+          <td class="detail-value detail-name"><%= @post.user.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-post">練習曲</th>
+          <td class="detail-value", style="white-space:pre-wrap;"><%= @post.program %></td>
+        </tr>
+        <tr>
+          <th class="detail-post">事務連絡</th>
+          <td class="detail-value", style="white-space:pre-wrap;"><%= @post.information %></td>
+        </tr>
+        <tr>
+          <th class="detail-post">感想</th>
+          <td class="detail-value", style="white-space:pre-wrap;"><%= @post.feedback %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
