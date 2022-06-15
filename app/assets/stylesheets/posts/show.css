@@ -1,0 +1,30 @@
+.detail-container {
+  /* background-color: bisque; */
+  height: 100vh;
+}
+
+.detail-table {
+  background-color: white;
+  margin: 0 auto;
+  width: 50%;
+  height: 100vh;
+  opacity: 0.9;
+}
+
+.detail-post {
+  width: 15%;
+  font-size: 24px;
+  background-color: #eee;
+  text-align: center;
+}
+
+.detail-value {
+  width: 85%;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.detail-date, .detail-name {
+  height: 8%;
+  font-size: 24px;
+}
