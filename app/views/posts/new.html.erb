@@ -2,6 +2,9 @@
 <div class='post-form'>
   <h1>練習報告</h1>
   <%=form_with model: @post, local: true do |f|%>
+    <%= f.label :date, :練習日, class: 'post-form__label' %>
+    <%= f.date_field :date, class: 'chat__room_name' %>
+
     <div class='post-form__field'>
       <div class='post-form__field--left'>
         <%= f.label :program, :練習曲, class: 'post-form__label'%>
