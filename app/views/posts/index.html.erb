@@ -1,1 +1,45 @@
 <%= render "shared/header" %>
+<div class="main">
+  <div class="image-opacity">
+
+    <div class="containers">
+      <div class="report-container">
+        <div class="report-title">
+          練習報告履歴
+        </div>
+        <table class="report-lists">
+          <% @posts.each do |post| %>
+            
+            <tr class="list">
+              <%= link_to '#' do %>
+                <td class="report-date">
+                  <%= post.date.strftime("%Y/%m/%d()") %>
+                </td>
+                <td class="report-name">
+                  <%= post.user.name %>
+                </td>
+              <% end %>
+            </tr>
+            
+          <% end %>
+        </table>
+      </div>
+
+      <div class="enquete-container">
+        <div class="enquete-title">
+          アンケート
+        </div>
+        
+      </div>
+
+      <div class="attendance-container">
+        <div class="attendance-title">
+          次回の出席状況
+        </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+</div>
