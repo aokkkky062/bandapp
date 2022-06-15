@@ -8,20 +8,20 @@
           練習報告履歴
         </div>
         <table class="report-lists">
-          <% @posts.each do |post| %>
-            
-            <tr class="list">
-              <%= link_to '#' do %>
-                <td class="report-date">
-                  <%= post.date.strftime("%Y/%m/%d()") %>
-                </td>
-                <td class="report-name">
-                  <%= post.user.name %>
-                </td>
-              <% end %>
-            </tr>
-            
-          <% end %>
+          <tbody>
+            <% @posts.each do |post| %>
+              <tr class="list">
+                <%#= link_to post_path(post) do %>
+                  <td class="report-date">
+                    <%= link_to post.date.strftime("%Y/%m/%d()"), post_path(post)  %>
+                  </td>
+                  <td class="report-name">
+                    <%= post.user.name %>
+                  </td>
+                <%# end %>
+              </tr>
+            <% end %>
+          </tbody>
         </table>
       </div>
 
