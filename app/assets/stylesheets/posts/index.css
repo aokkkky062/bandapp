@@ -40,9 +40,10 @@
 }
 
 .list {
+  /* display: block; */
   width: 100%;
   font-size: 18px;
-  display: flex;
+  /* display: flex; */
   border: 1px solid black;
   /* margin-bottom: 5px;  */
   background-color: aliceblue;
