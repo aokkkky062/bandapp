@@ -54,6 +54,7 @@ li {
 .post-form__input {
   /* float: left; */
   width: 100%;
+  height: 650px;
   line-height: 30px;
   padding: 10px 15px;
   box-sizing: border-box;
