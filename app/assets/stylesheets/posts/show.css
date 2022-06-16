@@ -1,16 +1,13 @@
 .detail-container {
-  background-color: bisque;
+  /* background-color: bisque; */
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .detail-table {
   background-color: white;
   margin: 0 auto;
   width: 50%;
-  height: calc(100vh - 60px);
+  height: 100vh;
   opacity: 0.9;
 }
 
@@ -29,17 +26,5 @@
 
 .detail-date, .detail-name {
   height: 8%;
-  font-size: 24px;
-}
-
-.post-edit-btn {
-  text-decoration: none;
-  /* display: block; */
-  background-color: orange;
-  /* width: 100px;
-  height: 60px; */
-  text-align: center;
-  margin: 20px 0;
-  padding: 10px 20px;
   font-size: 24px;
 }
