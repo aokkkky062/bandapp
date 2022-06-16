@@ -29,7 +29,7 @@
     <div class="edit-destroy-btn-container">
       <% if current_user.id == @post.user_id %>
         <%= link_to "修正", edit_post_path(@post), method: :get, class: "post-edit-btn" %>
-        <%= link_to "削除", "#", method: :get, class: "post-destroy-btn" %>     
+        <%= link_to "削除", post_path(@post), method: :delete, data: {confirm: "削除しますか?"}, class: "post-destroy-btn" %>     
       <% end %>
     </div>
   </div>
