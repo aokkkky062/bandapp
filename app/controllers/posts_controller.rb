@@ -1,7 +1,4 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update]
-  before_action :user_if, only: [:edit]
-
   def index
     @posts = Post.all
   end
@@ -20,17 +17,7 @@ class PostsController < ApplicationController
   end
 
   def show
-  end
-
-  def edit
-  end
-
-  def update
-    if @post.update(post_params)
-      redirect_to post_path
-    else
-      render :edit
-    end
+    @post = Post.find(params[:id])
   end
 
   private
@@ -38,14 +25,4 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:date, :program, :information, :feedback).merge(user_id: current_user.id)
   end
-
-  def set_post
-    @post = Post.find(params[:id])
-  end
-
-  def user_if
-    if @post.user_id != current_user.id
-      redirect_to root_path
-    end
-  end 
 end
