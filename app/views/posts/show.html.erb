@@ -32,5 +32,24 @@
         <%= link_to "削除", post_path(@post), method: :delete, data: {confirm: "削除しますか?"}, class: "post-destroy-btn" %>     
       <% end %>
     </div>
+
+    <div id="report_comments">
+      <h4>＜コメント一覧＞</h4>
+      <% @post.report_comments.each do |report_comment| %>
+        <div class="report-comment">
+          <p class="user-info"><%= report_comment.user.name %>: </p>
+          <p><%= report_comment.text %></p>
+        </div>
+      <% end%>
+    </div>
+
+    <div class="report_comment-form">
+      <% if user_signed_in? %>
+        <%= form_with model: [@post, @report_comment], id: "report_comment-form" do |f| %>
+          <%= f.text_area :text, class: "report_comment-text" %>
+          <%= f.submit "コメントする", class: "report_comment-submit" %>
+        <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
