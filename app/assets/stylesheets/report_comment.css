@@ -1,0 +1,26 @@
+.report_comment-form{
+  display: flex;
+}
+
+.report_comment-text{
+  display: block;
+  margin-top: 20px;
+}
+
+.report_comment-submit{
+  display: block;
+  margin-top: 20px;
+}
+
+.report_comment{
+  display: flex;
+}
+
+.report_comment p{
+   margin: 0;
+}
+
+.user-info{
+  color: gray;
+  font-weight: bold;
+}
