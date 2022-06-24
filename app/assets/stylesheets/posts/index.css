@@ -15,7 +15,7 @@
   /* height: 100%; */
 }
 
-.report-container, .enquete-container, .attendance-container {
+.report-container, .enquete-container, .forget-container {
   margin-top: 5px;
   padding-top: 20px; 
   /* background-color: grey; */
@@ -25,7 +25,7 @@
   border-radius: 30px;
 }
 
-.report-title, .enquete-title, .attendance-title {
+.report-title, .enquete-title, .forget-title {
   /* background-color: beige; */
   margin-bottom: 5px;
   font-size: 30px;
