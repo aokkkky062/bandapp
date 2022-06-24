@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_action :user_if, only: [:edit, :destroy]
 
   def index
-    @posts = Post.all
+    @posts = Post.all.order("date DESC")
   end
 
   def new
