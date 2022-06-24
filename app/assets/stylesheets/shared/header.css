@@ -34,7 +34,7 @@
   align-items: flex-end;
 }
 
-.report, .enquete, .attendance, .user_name, .login {
+.report, .enquete, .forget, .user_name, .login {
   text-decoration: none;
   line-height: 32px;
   margin-right: 3vw;

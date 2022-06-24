@@ -9,7 +9,7 @@
     <ul class='lists-right'>
       <li><%= link_to '練習報告', new_post_path, class: "report" %></li>
       <li><%= link_to 'アンケート', "#", class: "enquete" %></li>
-      <li><%= link_to '出席状況', "#", class: "attendance" %></li>
+      <li><%= link_to '忘れ物', "#", class: "forget" %></li>
       <% if user_signed_in? %>
         <li><%= link_to current_user.name, edit_user_path(current_user), class: "user_name" %></li>
         <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
