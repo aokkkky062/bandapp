@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order("date DESC")
+    @forgets = Forget.all.order("date DESC")
   end
 
   def new

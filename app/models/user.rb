@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :posts
   has_many :report_comments
+  has_many :forgets
   
   validates :name, presence: true
 end

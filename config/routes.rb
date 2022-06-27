@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :posts do
     resources :report_comments, only: :create
   end
+  resources :forgets
 end

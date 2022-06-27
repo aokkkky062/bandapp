@@ -1,0 +1,41 @@
+<%= render "shared/header" %>
+<div class='forget-form'>
+  <h1>忘れ物投稿</h1>
+  <%=form_with model: @forget, local: true do |f|%>
+    <%= f.label :date, :発見日, class: 'forget-form__label' %>
+    <%= f.date_field :date, class: 'chat__room_name' %>
+
+    <div class="forget-form__field">
+      <div class="forget-form__label">
+        忘れ物画像
+      </div>
+      <div class="click-upload">
+        <%= f.file_field :image, id:"forget-image" %>
+      </div>
+    </div>
+
+    <div class='forget-form__field'>
+      <div class='forget-form__field--left'>
+        <%= f.label :object, :忘れ物, class: 'forget-form__label'%>
+      </div>
+      <div class='forget-form__field--right'>
+        <%= f.text_field :object, class: 'chat__room_name forget-form__input' %>
+      </div>
+    </div>
+    <div class='forget-form__field'>
+      <div class='forget-form__field--left'>
+        <%= f.label :place, :場所, class: 'forget-form__label'%>
+      </div>
+      <div class='forget-form__field--right'>
+        <%= f.text_field :place, class: 'chat__room_name forget-form__input' %>
+      </div>
+    </div>
+
+    <div class='forget-form__field'>
+      <div class='forget-form__field--left'></div>
+      <div class='forget-form__field--right'>
+        <%= f.submit value: "送信", class: 'forget-form__action-btn'%>
+      </div>
+    </div>
+  <% end %>
+</div>
