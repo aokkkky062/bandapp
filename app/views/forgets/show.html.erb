@@ -1,0 +1,26 @@
+<%= render "shared/header" %>
+<div class="main">
+  <div class="detail-container">
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-post detail-date">発見日</th>
+          <td class="detail-value detail-date"><%= @forget.date.strftime("%Y/%m/%d") %></td>
+        </tr>
+        <tr>
+          <th class="detail-post detail-name">投稿者</th>
+          <td class="detail-value detail-name"><%= @forget.user.name %></td>
+        </tr>
+        <tr>
+          <%= image_tag @forget.image ,class:"item-box-img" %>
+        </tr>
+        <tr>
+          <th class="detail-post">忘れ物</th>
+          <td class="detail-value", style="white-space:pre-wrap;"><%= @forget.object %></td>
+        </tr>
+        <tr>
+          <th class="detail-post">発見場所</th>
+          <td class="detail-value", style="white-space:pre-wrap;"><%= @forget.place %></td>
+        </tr>
+      </tbody>
+    </table>
