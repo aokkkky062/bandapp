@@ -33,6 +33,18 @@
       <% end %>
     </div>
 
+    <%# いいね機能 %>
+    <% if @post.favorited?(current_user) %>
+      <%= link_to post_favorite_path(@post.id), method: :delete do %>
+        <span style="color:yellow">★</span> <%= @post.favorites.count %>
+      <% end %>
+    <% else %>
+      <%= link_to post_favorites_path(@post.id), method: :post do %>
+        <span>★ </span><%= @post.favorites.count %>
+      <% end %>
+    <% end %>
+    <%# いいね機能 %>
+
     <div id="report_comments">
       <h4>＜コメント一覧＞</h4>
       <% @post.report_comments.each do |report_comment| %>
