@@ -8,10 +8,10 @@ BandApp
 https://bandapp-62.herokuapp.com/
 
 ## テスト用アカウント
-・Basic認証ID：
-・Basic認証パスワード：
-・メールアドレス：
-・パスワード：
+・Basic認証ID：aokkkky
+・Basic認証パスワード：aokkkky62
+・メールアドレス：test@com
+・パスワード：test123
 
 ## 利用方法
 # 練習報告投稿
