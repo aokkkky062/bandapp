@@ -45,8 +45,7 @@ https://docs.google.com/spreadsheets/d/1Sl9qy5ZAm2Ne_dxD9ttGRT_tvT0v0262p4tQGNAZ
 
 
 # 実装予定の機能
-・忘れ物を写真で投稿おできる機能
-・やりたい曲などについてのアンケート機能
+・アンケート機能
 
 # データベース設計
 
