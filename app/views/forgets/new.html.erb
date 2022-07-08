@@ -1,11 +1,12 @@
 <%= render "shared/header" %>
 <div class='forget-form'>
   <h1>忘れ物投稿</h1>
-  <%=form_with model: @forget, local: true do |f|%>
+  <%=form_with model: @forget, id: 'new_forget', local: true do |f|%>
     <%= f.label :date, :発見日, class: 'forget-form__label' %>
     <%= f.date_field :date, class: 'chat__room_name' %>
 
     <div class="forget-form__field">
+      <div id="previews"></div>
       <div class="forget-form__label">
         忘れ物画像
       </div>
